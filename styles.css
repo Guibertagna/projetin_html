@@ -5,7 +5,7 @@
 }
 
 i {
-    color: #ECDFCC;
+    color: #3C3D37;
 }
 
 body {
@@ -13,18 +13,37 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #181C14;
+    background-color: #ECDFCC;;
+}
+.logo{
+    width: 150px;
 }
 
 header {
+    color: #3C3D37;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    color: #ECDFCC;
-    padding: 20px;
+form{
+
+
+
+}
+input{
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
 }
 
 nav ul {
-    text-align: end;
-    margin-top: 10px;
+
+    padding: 10px;
 }
 
 nav ul li {
@@ -33,7 +52,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ECDFCC;
+    color: #3C3D37;
     text-decoration: none;
 }
 
@@ -50,17 +69,30 @@ main {
     color: #ECDFCC;
 }
 
-.banner {
-    background-color: #3C3D37;
-    padding: 50px;
-    text-align: center;
+.banner{
+ width: 100vw;
+ background-image: url('img/i695444.jpeg');
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
 }
+
+
+
 
 .categorias {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
+.botao-pesquisa{
+    background-color: #3C3D37;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
 
 .destaque {
     margin-top: 20px;
@@ -68,50 +100,63 @@ main {
     justify-content: end;
     margin: 20px;
 }
-.produto{
+
+.produto {
     margin: 5px;
 }
-.produto-em-destaque{
+
+.produto-em-destaque {
     font-size: 20px;
-    
+
 }
+
 .categoria-item {
-    background-color: #697565;
     padding: 15px;
-    margin: 10px;
+    margin: 5px;
     width: 120px;
     border-radius: 5px;
     text-align: center;
     align-items: center;
 }
+.todos-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 80px
 
+}
 .card {
-    margin-top: 20px;
-    background-color: #697565;
-    width: 250px;
-    height: 300px;
-    border-radius: 12px;
-
-    margin: 10px;
+    width: 270px;
+    height: 550px;
+    box-shadow: 5px 4px 20px 5px #918b8b;
 }
 
 .card img {
     width: 100%;
-    height: 130px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    height: 230px;
 }
 
 .card div {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 10px;
     height: 50%;
-
 }
-
+.oferta{
+    box-shadow: 5px 4px 20px 5px #918b8b;
+    margin-top: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    height: 30px;
+}
 .card h1 {
     font-size: 1.2rem;
     color: #3C3D37;
@@ -126,11 +171,10 @@ main {
     color: #3C3D37;
 }
 
-.todos-card {
-    display: flex;
-    flex-wrap: wrap;
-}
 
+.card button a{
+    text-decoration: none;
+}
 .card button {
     background-color: #3C3D37;
     height: 30px;
