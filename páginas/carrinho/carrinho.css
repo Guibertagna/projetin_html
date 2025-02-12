@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i {
+    color: #3C3D37;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ECDFCC;
+    ;
+}
+
+.logo {
+    width: 150px;
+}
+
+header {
+    color: #3C3D37;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #3C3D37;
+    text-decoration: none;
+}
+
+.produto img{
+    margin-left: 20px;
+    margin-top: 20px;
+    max-width: 80Px;
+    max-height: 80px;
+    border: 2px gray solid;
+    background-color: rgb(214, 216, 202, 0.5);
+}
+.produto h5{
+    margin-top: 40px;
+}
+.produto h6{
+    color: blue;
+}
+.produto span{
+    margin: 0;
+
+}
+.produto{
+    border: 2px gray solid;
+    gap: 10px;
+    display: flex;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(145, 146, 140, 0.2);
+}
+.container {
+    display: flex; /* Faz as divs dentro dele ficarem lado a lado */
+    gap:150px; /* Espaço entre as divs */
+    margin-left: 80px;
+    margin-top: 80px;
+}
+.fora{
+    margin-top: 80px;
+    margin-left: 80px;
+}
+.separador{
+    margin-left: 50px;
+    width: 500px;
+    height: 2px;
+    background-color: rgb(128, 128, 128, 0.3);
+    margin-top: -80px;
+}
+
+.total{
+    margin-top: 150px;
+    margin-left: 80px;
+}
+.botao-finaliza{
+    color: #3C3D37;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+}
+.pagamento{
+    border: 2px gray solid;
+    gap: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(145, 146, 140, 0.2);
+}
