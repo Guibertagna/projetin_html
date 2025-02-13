@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-posicao">
+            <img class="logo" src="../../img/CORRIDA.png">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../inicio/inicio.html">Início</a></li>
+                <li><a href="../produtos/produtos.html">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="../carrinho/carrinho.html"><i  class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="../login/login.html"><i  class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <div class="container"> <!-- Novo contêiner para alinhamento lado a lado -->
+            
+                <div class="login-container">
+                    <h2>Cadastro</h2>
+                    <form class="form-cartao"> 
+                        <label>Nome Completo</label> 
+                        <input type="text" placeholder="Nome completo" required>
+                        <label>E-mail</label> 
+                        <input type="email" placeholder="XXXX@exemple.com" required> 
+                        <label>Senha</label> 
+                        <input type="password" placeholder="Senha" required>
+                        <label>Confirme sua senha</label> 
+                        <input type="password" placeholder="Confirma senha" required>
+                        <button type="submit"class="botao-enviar">Login</button>
+                    </form>
+                </div>
+                <h4 style="margin-top: 10px;">Já tem conta? <a href="../login/login.html"><u  href="" style="color: blue;"> Faça login aqui</u></a></h4>
+            </div>
+    </main>
+
+</body>

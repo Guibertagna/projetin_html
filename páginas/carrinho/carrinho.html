@@ -21,32 +21,52 @@
                 <li><a href="../inicio/inicio.html">Início</a></li>
                 <li><a href="../produtos/produtos.html">Produtos</a></li>
                 <li><a href="#">Contato</a></li>
-                <li><a href="../carrinho/carrinho.html"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><i class="fas fa-user"></i></li>
+                <li><a href="../carrinho/carrinho.html"><i  class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="../login/login.html"><i  class="fas fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="fora">
-            <h2>Meu carrinho</h2>
+            <div>
+                <h2 style="text-align: left; margin-bottom: -70px;">Meu carrinho</h2>
+            </div>
             <div class="container"> <!-- Novo contêiner para alinhamento lado a lado -->
-                <div class="produto">    
-                    <img src="../../img/chevette.png">
-                    <div>
-                        <h5>1X Câmbio de Chevette 5 marchas</h5>
-                        <h6>|editar|</h6>
+                <div class="produto">
+                    <div class="info-produto">
+                        <img src="../../img/chevette.png">
+                        <div>
+                            <h5>1X Câmbio de Chevette 5 marchas</h5>
+                            <h6>|editar|</h6>
+                        </div>
                     </div>
-                    <div class="total"> 
-                        <h3>Total: R$: 5.000</h3>  
+                    <div class="separador"></div>
+                    <div class="total">
+                        <button class="finaliza">Cancelar</button>
+                        <h3>Total: R$: 5.000</h3>
                     </div>
                 </div>
-                <div class="pagamento"> <!-- Outra div que será alinhada ao lado da anterior -->
-                    <!-- Conteúdo da div pagamento -->
+                <div class="cartao-container">
+                    <h2>Informações do Cartão</h2>
+                    <form class="form-cartao"> 
+                        <label for="numero-cartao">Número do Cartão</label> 
+                        <input type="text" placeholder="XXXX XXXX XXXX XXXX" required> 
+                        <label for="nome-titular">Nome do Titular</label> 
+                        <input type="text" placeholder="Nome completo" required>
+                        
+                        <div class="expira"> 
+                            <label for="validade">Data de Validade</label> 
+                            <input type="month" required> 
+                        </div>
+                        <div class="cvv"> 
+                            <label for="cvv">Código de Segurança (CVV)</label> 
+                            <input type="text" id="cvv"name="cvv" placeholder="XXX" required> 
+                        </div> 
+                        <button type="submit"class="botao-enviar">Salvar Cartão</button>
+                    </form>
                 </div>
             </div>
-            <button class="botao-finaliza" style="background-color: green;">FINALIZAR</button>
-            <div class="separador"></div>
         </div>
     </main>
-    
+
 </body>
