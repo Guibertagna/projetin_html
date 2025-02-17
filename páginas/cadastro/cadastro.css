@@ -1,90 +1,101 @@
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-i {
-    color: #3C3D37;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #ECDFCC;
-    ;
-}
-
-.logo {
-    width: 150px;
-}
-
-header {
-    color: #3C3D37;
+.container {
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
-nav ul {
-
-    padding: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #3C3D37;
-    text-decoration: none;
-}
-
-
-
-.container {
-    justify-content: center;
+.esquerdo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
-}
-
-.fora {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 4px;
+    border-top-left-radius: 30px;
+    border-end-start-radius: 30px;
+    background-color: #3C3D37;
+    width: 100vh;
+    height: 99%;
 }
 
-.login-container {
+.esquerdo img {
+    max-width: 700px;
+}
+
+.container-login {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.direito {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     width: 100%;
-    max-width: 400px;
-    margin: 0 ;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     font-family: Arial, sans-serif;
     color: #333;
 }
 
-h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+.login {
+    padding-bottom: 20px;
 }
 
-.form-cartao {
+.login img {
+    max-width: 150px;
+}
+
+.botao-google {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    height: 35px;
+    width: 350px;
+    font-size: 16px;
+    border: #333 solid 1px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.separador {
+    margin: 10px;
+    opacity: 40%;
+}
+
+.form-login label {
+    text-align: start;
+}
+
+.form-login u {
+    text-align: end;
+}
+
+.form-login {
+
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 15px;
+}
+
+.logar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
 }
 
 label {
@@ -92,11 +103,32 @@ label {
     font-weight: bold;
 }
 
+.lembrar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lembrar input {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.esqueceu-senha {
+    color: blue;
+    text-decoration: underline;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
 input {
+    height: 30px;
+    width: 350px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 4px;
     outline: none;
 }
 
@@ -108,19 +140,14 @@ input::placeholder {
     color: #aaa;
 }
 
-.expira,.cvv {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
 .botao-enviar {
     padding: 10px 20px;
     background-color: green;
     color: white;
+    height: 35px;
     font-size: 16px;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -129,3 +156,28 @@ input::placeholder {
     background-color: #3aa715;
 }
 
+
+
+
+.imagem-inicio {
+    position: relative;
+    left: 0;
+
+    transform: translateX(-30%);
+    animation: moverParaCentro 2s ease-in-out forwards;
+}
+
+.sem-conta{
+    margin-top: 50px;
+}
+@keyframes moverParaCentro {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 40%;
+        transform: translateX(-40%) ;
+    }
+
+}

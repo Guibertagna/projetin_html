@@ -1,139 +1,4 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-i {
-    color: #3C3D37;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #ECDFCC;
-    ;
-}
-
-.logo {
-    width: 150px;
-}
-
-header {
-    color: #3C3D37;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav ul {
-
-    padding: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #3C3D37;
-    text-decoration: none;
-}
-
-
-
-.container {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
-}
-
-
-
-.login-container {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 ;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
-h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.form-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-label {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    outline: none;
-}
-
-input:focus {
-    border-color: #3C3D37;
-}
-
-input::placeholder {
-    color: #aaa;
-}
-
-.expira,.cvv {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.botao-enviar {
-    padding: 10px 20px;
-    background-color: green;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.botao-enviar:hover {
-    background-color: #3aa715;
-}
-.footer{
-    color: white;
-    padding: 20px 0;
-    margin-bottom: 120;
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
-    position: relative;
-    bottom: 0;
-    background-color: #000000;
-} */
 
 * {
     margin: 0;
@@ -189,13 +54,14 @@ input::placeholder {
 }
 
 .login img {
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .botao-google {
     background-color: transparent;
     color: rgb(0, 0, 0);
-    width: 400px;
+    height: 35px;
+    width: 350px;
     font-size: 16px;
     border: #333 solid 1px;
     padding: 10px;
@@ -257,7 +123,8 @@ label {
 }
 
 input {
-    width: 400px;
+    height: 30px;
+    width: 350px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -277,6 +144,7 @@ input::placeholder {
     padding: 10px 20px;
     background-color: green;
     color: white;
+    height: 35px;
     font-size: 16px;
     border: none;
     border-radius: 4px;
@@ -299,6 +167,9 @@ input::placeholder {
     animation: moverParaCentro 2s ease-in-out forwards;
 }
 
+.sem-conta{
+    margin-top: 50px;
+}
 @keyframes moverParaCentro {
     from {
         left: 0;

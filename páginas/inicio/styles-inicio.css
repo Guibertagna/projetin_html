@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #ECDFCC;
+    background-color: #ffffff;
     ;
 }
 
@@ -45,9 +45,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-.banner-inicio {
 
-}
 
 .banner-inicio h1 {
     margin-top: 300px;
