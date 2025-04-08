@@ -9,16 +9,16 @@
 .container {
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;asdasda
 }
 
 .esquerdo {
-    display: flex;
+    display: flex;asdasda
     justify-content: center;
     align-items: center;
     margin: 4px;
     border-top-left-radius: 30px;
-    border-end-start-radius: 30px;
+    border-end-start-radius: 30px;dada
     background-color: #3C3D37;
     width: 100vh;
     height: 99%;
