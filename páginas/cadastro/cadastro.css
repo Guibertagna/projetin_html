@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+swa
 .container {
     height: 100vh;
     display: flex;
@@ -14,10 +14,10 @@
 
 .esquerdo {
     display: flex;
-    justify-content: center;
+    justify-content: center;dadas
     align-items: center;
     margin: 4px;
-    border-top-left-radius: 30px;
+    border-top-left-radius: 30px;wsa
     border-end-start-radius: 30px;
     background-color: #3C3D37;
     width: 100vh;
