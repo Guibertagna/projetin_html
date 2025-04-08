@@ -14,10 +14,10 @@ swa
 
 .esquerdo {
     display: flex;
-    justify-content: center;dadas
+    justify-content: center;
     align-items: center;
     margin: 4px;
-    border-top-left-radius: 30px;wsa
+    border-top-left-radius: 30px;
     border-end-start-radius: 30px;
     background-color: #3C3D37;
     width: 100vh;
